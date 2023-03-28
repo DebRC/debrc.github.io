@@ -4,12 +4,12 @@ import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/description.dart';
 import 'package:portfolio_site/widgets/profile_image.dart';
 
-class UpperContainer extends StatelessWidget {
-  final double width;
-  const UpperContainer({required this.width, Key? key}) : super(key: key);
+class ProfileWidget extends StatelessWidget {
+  const ProfileWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
       color: CustomColors.brightBackground,
