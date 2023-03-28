@@ -14,8 +14,8 @@ class ProfileWidget extends StatelessWidget {
       width: width,
       color: CustomColors.brightBackground,
       padding: const EdgeInsets.only(bottom: 20),
-      child: LayoutBuilder(builder: (context, consraints) {
-        if (consraints.maxWidth >= ScreenSize.lg) {
+      child: LayoutBuilder(builder: (context, constraints) {
+        if (constraints.maxWidth >= ScreenSize.lg) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -30,8 +30,8 @@ class ProfileWidget extends StatelessWidget {
               )
             ],
           );
-        } else if (consraints.maxWidth < ScreenSize.lg &&
-            consraints.maxWidth >= ScreenSize.md) {
+        } else if (constraints.maxWidth < ScreenSize.lg &&
+            constraints.maxWidth >= ScreenSize.md) {
           return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
