@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_site/helpers/colors.dart';
 
-class Interest extends StatelessWidget {
+class Skills extends StatelessWidget {
   final Color color;
   final Color textColor;
-  final String intrest;
-  const Interest(
-      {required this.intrest,
+  final String skillName;
+  const Skills(
+      {required this.skillName,
       required this.color,
       required this.textColor,
       Key? key})
@@ -25,7 +25,7 @@ class Interest extends StatelessWidget {
                   ? CustomColors.primary
                   : textColor)),
       child: Center(
-          child: Text('.' + intrest,
+          child: Text('.' + skillName,
               style: GoogleFonts.getFont('Delius',
                   color: textColor, fontSize: 13))),
     );
