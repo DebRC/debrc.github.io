@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
-import 'package:portfolio_site/widgets/description.dart';
-import 'package:portfolio_site/widgets/profile_image.dart';
+import 'package:portfolio_site/widgets/profile_widget_helpers/description.dart';
+import 'package:portfolio_site/widgets/profile_widget_helpers/profile_image.dart';
 
 class ProfileWidget extends StatelessWidget {
   const ProfileWidget({Key? key}) : super(key: key);
