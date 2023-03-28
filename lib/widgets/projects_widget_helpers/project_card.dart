@@ -3,13 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 
-class SkillCard extends StatelessWidget {
+class ProjectCard extends StatelessWidget {
   final String title;
   final String description;
   final double width;
   final double ratio;
   final String icon;
-  const SkillCard(
+  const ProjectCard(
       {required this.title,
       required this.description,
       required this.icon,
