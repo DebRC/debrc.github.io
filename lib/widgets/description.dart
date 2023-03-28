@@ -20,12 +20,12 @@ class Description extends StatelessWidget {
         children: [
           Container(
               margin: const EdgeInsets.symmetric(horizontal: 10),
-              width: 135,
+              width: 200,
               height: 40,
               alignment: Alignment.center,
               color: CustomColors.primary,
               child: Center(
-                  child: Text('CS Engineer',
+                  child: Text('Computer Science Engineer',
                       style: GoogleFonts.getFont('Days One',
                           color: Colors.black, fontSize: 10)))),
           SizedBox(height: 0.015 * width),
@@ -56,15 +56,69 @@ class Description extends StatelessWidget {
               ),
             ),
           ),
-          InkWell(
-            onTap: () async =>
-                !await launchUrlString('https://in.linkedin.com/in/debdootrc'),
-            child: Text("Connect with me!",
-                style: GoogleFonts.getFont('Delius',
-                    decoration: TextDecoration.underline,
-                    color: CustomColors.primary,
-                    fontSize: 20)),
-          )
+          isVertical
+              ? Column(
+                  children: [
+                    TextButton(
+                      style: ButtonStyle(
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.blue),
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            CustomColors.primary),
+                      ),
+                      onPressed: () {
+                        launchUrlString(
+                            "https://drive.google.com/file/d/1ipBxRJNCUmF9lmzXMcZlZl0nYOnzXcqy/view");
+                      },
+                      child: Text('My Resume',
+                          style: GoogleFonts.getFont('Days One',
+                              color: Colors.black, fontSize: 10)),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    InkWell(
+                      onTap: () async => !await launchUrlString(
+                          'https://in.linkedin.com/in/debdootrc'),
+                      child: Text("Connect with me!",
+                          style: GoogleFonts.getFont('Delius',
+                              decoration: TextDecoration.underline,
+                              color: CustomColors.primary,
+                              fontSize: 20)),
+                    ),
+                  ],
+                )
+              : Row(
+                  children: [
+                    TextButton(
+                      style: ButtonStyle(
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.blue),
+                        backgroundColor: MaterialStateProperty.all<Color>(
+                            CustomColors.primary),
+                      ),
+                      onPressed: () {
+                        launchUrlString(
+                            "https://drive.google.com/file/d/1ipBxRJNCUmF9lmzXMcZlZl0nYOnzXcqy/view");
+                      },
+                      child: Text('My Resume',
+                          style: GoogleFonts.getFont('Days One',
+                              color: Colors.black, fontSize: 10)),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    InkWell(
+                      onTap: () async => !await launchUrlString(
+                          'https://in.linkedin.com/in/debdootrc'),
+                      child: Text("Connect with me!",
+                          style: GoogleFonts.getFont('Delius',
+                              decoration: TextDecoration.underline,
+                              color: CustomColors.primary,
+                              fontSize: 20)),
+                    ),
+                  ],
+                ),
         ],
       ),
     );
