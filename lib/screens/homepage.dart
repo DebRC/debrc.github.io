@@ -6,7 +6,7 @@ import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/footer.dart';
 import 'package:portfolio_site/widgets/lower_container.dart';
 import 'package:portfolio_site/widgets/nav_bar.dart';
-import 'package:portfolio_site/widgets/upper_container.dart';
+import 'package:portfolio_site/widgets/profile_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -78,8 +78,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               Column(
                 children: [
-                  const SizedBox(height: 200),
-                  UpperContainer(width: width),
+                  const SizedBox(height: 100),
+                  ProfileWidget(),
                   const SizedBox(height: 100),
                   LowerContainer(
                     width: width,
