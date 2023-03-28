@@ -38,16 +38,16 @@ class Description extends StatelessWidget {
                   color: Colors.white, fontSize: 30)),
           const SizedBox(height: 20),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: SizedBox(
               width: isVertical ? double.infinity : width * 0.29,
-              height: 90,
+              height: 100,
               child: AnimatedTextKit(
                 repeatForever: true,
-                pause: const Duration(seconds: 2),
+                pause: const Duration(seconds: 5),
                 animatedTexts: [
                   TyperAnimatedText(
-                      "I'm good with Theoretical Computer Science &\nA little bit of development using Flutter and Node JS\n\nI have secured AIR 52 in GATE CS 2023",
+                      "I'm good with Theoretical Computer Science &\nA little bit of development using Flutter and Node JS.\n\nI have secured AIR 52 in GATE CS 2023.",
                       textAlign:
                           isVertical ? TextAlign.center : TextAlign.start,
                       textStyle: GoogleFonts.getFont('Delius',
