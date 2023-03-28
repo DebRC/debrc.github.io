@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/screens/homepage.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -14,7 +15,7 @@ void main() {
       highlightColor: CustomColors.primary,
     ),
     title: 'DebRC',
-    // home: const Portfolio(),
+    home: const HomePage(),
     debugShowCheckedModeBanner: false,
   ));
 }
