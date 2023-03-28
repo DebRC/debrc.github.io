@@ -7,8 +7,6 @@ import 'package:portfolio_site/widgets/logo.dart';
 import 'package:portfolio_site/widgets/nav_bar_button.dart';
 import 'package:portfolio_site/widgets/nav_bar_item.dart';
 import 'package:portfolio_site/widgets/nav_bar_item_with_icon.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class NavBar extends StatelessWidget {
   final double width;
@@ -151,7 +149,7 @@ class NavBar extends StatelessWidget {
             collapsableHeight),
         Container(
           height: 80.0,
-          margin: const EdgeInsets.only(top: 40.0),
+          margin: const EdgeInsets.only(top: 10.0),
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           child: (width < ScreenSize.xlg)
               ? Row(

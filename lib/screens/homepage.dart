@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/interests_constants.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/widgets/footer.dart';
+import 'package:portfolio_site/widgets/lower_container.dart';
+import 'package:portfolio_site/widgets/nav_bar.dart';
+import 'package:portfolio_site/widgets/upper_container.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,17 +16,22 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late final GlobalKey interestsKey;
-  late final GlobalKey skillsKey;
   late final GlobalKey homeKey;
+  late final GlobalKey educationKey;
+  late final GlobalKey projectsKey;
+  late final GlobalKey skillsKey;
+  late final GlobalKey contactsKey;
   late final ScrollController scrollController;
   late final RxBool showFloatingButton;
 
   @override
   void initState() {
-    interestsKey = GlobalKey();
-    skillsKey = GlobalKey();
     homeKey = GlobalKey();
+    educationKey = GlobalKey();
+    projectsKey = GlobalKey();
+    skillsKey = GlobalKey();
+    contactsKey = GlobalKey();
+
     scrollController = ScrollController();
     showFloatingButton = false.obs;
 
@@ -33,6 +43,12 @@ class _HomePageState extends State<HomePage> {
       }
     });
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
   }
 
   @override
@@ -59,44 +75,44 @@ class _HomePageState extends State<HomePage> {
         child: SingleChildScrollView(
           controller: scrollController,
           child: Stack(
-            children: const [
-              // Column(
-              //   children: [
-              //     const SizedBox(height: 130),
-              //     UpperContainer(width: width),
-              //     LowerContainer(
-              //         width: width,
-              //         intrests: intrests,
-              //         intrestsKey: intrestsKey,
-              //         skillsKey: skillsKey),
-              //     Container(
-              //       width: width,
-              //       height: 0.1,
-              //       color: CustomColors.gray,
-              //     ),
-              //     Footer(
-              //       width: width,
-              //       scrollController: scrollController,
-              //     ),
-              //   ],
-              // ),
-              // NavBar(
-              // width: width,
-              // skillsKey: skillsKey,
-              // intrestsKey: intrestsKey,
-              // key: homeKey,
-              // scrollController: scrollController,
-              // ),
+            children: [
+              Column(
+                children: [
+                  const SizedBox(height: 200),
+                  UpperContainer(width: width),
+                  const SizedBox(height: 100),
+                  LowerContainer(
+                    width: width,
+                    interests: Interests.interests,
+                    educationKey: educationKey,
+                    projectsKey: projectsKey,
+                    skillsKey: skillsKey,
+                    contactsKey: contactsKey,
+                  ),
+                  Container(
+                    width: width,
+                    height: 0.1,
+                    color: CustomColors.gray,
+                  ),
+                  Footer(
+                    width: width,
+                    scrollController: scrollController,
+                  ),
+                ],
+              ),
+              NavBar(
+                key: homeKey,
+                width: width,
+                educationKey: educationKey,
+                projectsKey: projectsKey,
+                skillsKey: skillsKey,
+                contactsKey: contactsKey,
+                scrollController: scrollController,
+              ),
             ],
           ),
         ),
       ),
     );
-  }
-
-  @override
-  void dispose() {
-    scrollController.dispose();
-    super.dispose();
   }
 }
