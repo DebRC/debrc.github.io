@@ -5,13 +5,12 @@ import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/logo.dart';
 
 class Footer extends StatelessWidget {
-  final double width;
   final ScrollController scrollController;
-  const Footer({required this.width, required this.scrollController, Key? key})
-      : super(key: key);
+  const Footer({required this.scrollController, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Container(
         color: CustomColors.darkBackground,
         padding: const EdgeInsets.symmetric(vertical: 20),
@@ -28,28 +27,26 @@ class Footer extends StatelessWidget {
                 ? Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text('Copyright © 2021 khalid-alsaleh-dev',
+                      Text('Developed by DebRC',
                           style: GoogleFonts.getFont('Delius',
                               color: CustomColors.gray, fontSize: 14)),
                       Text('All rights reserved',
                           style: GoogleFonts.getFont('Delius',
                               color: CustomColors.gray, fontSize: 14)),
-                      Text('khalidlionel.2089@gmail.com',
+                      Text('roychowdhurydebdoot@gmail.com',
                           style: GoogleFonts.getFont('Delius',
                               color: CustomColors.gray, fontSize: 14)),
                     ],
                   )
                 : Column(
                     children: [
-                      Text('Copyright © 2021 khalid-alsaleh-dev',
+                      Text('Developed by DebRC',
                           style: GoogleFonts.getFont('Delius',
                               color: CustomColors.gray, fontSize: 14)),
-                      const SizedBox(height: 10),
-                      Text(' All rights reserved',
+                      Text('All rights reserved',
                           style: GoogleFonts.getFont('Delius',
                               color: CustomColors.gray, fontSize: 14)),
-                      const SizedBox(height: 10),
-                      Text('khalidlionel.2089@gmail.com',
+                      Text('roychowdhurydebdoot@gmail.com',
                           style: GoogleFonts.getFont('Delius',
                               color: CustomColors.gray, fontSize: 14)),
                     ],
