@@ -80,6 +80,7 @@ class SkillsWidget extends StatelessWidget {
                 width: width * 0.76,
                 height: 360,
                 child: StaggeredGridView.countBuilder(
+                  physics: const NeverScrollableScrollPhysics(),
                   crossAxisCount: 8,
                   itemCount: 8,
                   itemBuilder: (BuildContext context, int index) => Skills(
