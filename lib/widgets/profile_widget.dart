@@ -13,13 +13,12 @@ class ProfileWidget extends StatelessWidget {
     return Container(
       width: width,
       color: ColorsList.darkBackground,
-      padding: const EdgeInsets.only(bottom: 20),
+      padding: EdgeInsets.only(bottom: width * 0.05, top: width * 0.05),
       child: LayoutBuilder(builder: (context, constraints) {
         if (constraints.maxWidth >= ScreenSize.lg) {
           return Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(width: width * 0.02),
               Description(
                 isVertical: false,
                 width: width,
