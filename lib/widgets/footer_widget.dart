@@ -12,7 +12,7 @@ class FooterWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-        color: ColorsList.brightBackground,
+        color: ColorsList.darkBackground,
         padding: const EdgeInsets.symmetric(vertical: 20),
         width: width,
         child: Column(

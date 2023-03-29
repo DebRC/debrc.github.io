@@ -15,7 +15,7 @@ class SkillsWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
-      color: ColorsList.brightBackground,
+      color: ColorsList.darkBackground,
       padding:
           EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.05),
       key: skillsKey,
