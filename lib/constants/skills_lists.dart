@@ -1,4 +1,4 @@
-import 'package:portfolio_site/helpers/colors_list.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
 
 class SkillsList {
   static List<Map<dynamic, dynamic>> skillsList = [

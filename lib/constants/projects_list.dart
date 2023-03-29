@@ -1,4 +1,4 @@
-import 'package:portfolio_site/helpers/image_assets.dart';
+import 'package:portfolio_site/constants/image_assets.dart';
 import 'package:portfolio_site/models/project.dart';
 
 class ProjectsList {
