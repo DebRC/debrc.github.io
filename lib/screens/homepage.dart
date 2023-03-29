@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_site/constants/colors_list.dart';
 import 'package:portfolio_site/constants/screensize.dart';
+import 'package:portfolio_site/widgets/achievements_widget.dart';
 import 'package:portfolio_site/widgets/contacts_widget.dart';
 import 'package:portfolio_site/widgets/education_widget.dart';
 import 'package:portfolio_site/widgets/footer_widget.dart';
@@ -21,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   late final GlobalKey homeKey;
   late final GlobalKey educationKey;
   late final GlobalKey projectsKey;
+  late final GlobalKey achievementsKey;
   late final GlobalKey skillsKey;
   late final GlobalKey contactsKey;
   late final ScrollController scrollController;
@@ -31,6 +33,7 @@ class _HomePageState extends State<HomePage> {
     homeKey = GlobalKey();
     educationKey = GlobalKey();
     projectsKey = GlobalKey();
+    achievementsKey = GlobalKey();
     skillsKey = GlobalKey();
     contactsKey = GlobalKey();
 
@@ -68,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                         curve: Curves.easeInOut),
                     backgroundColor: ColorsList.primary,
                     child: const Icon(Icons.arrow_upward,
-                        color: ColorsList.darkBackground)),
+                        color: ColorsList.brightBackground)),
               ),
           showFloatingButton),
       body: Container(
@@ -87,6 +90,9 @@ class _HomePageState extends State<HomePage> {
                     educationKey: educationKey,
                   ),
                   ProjectsWidget(projectsKey: projectsKey),
+                  AchieveMentsWidget(
+                    achievementsKey: achievementsKey,
+                  ),
                   SkillsWidget(
                     skillsKey: skillsKey,
                   ),
