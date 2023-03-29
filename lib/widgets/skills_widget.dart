@@ -22,13 +22,19 @@ class SkillsWidget extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('SKILLS',
-              style: GoogleFonts.oswald(
-                color: Colors.white,
-                fontWeight: FontWeight.w900,
-                fontSize: 30.0,
-                height: 1.3,
-              )),
+          Text(
+            'SKILLS',
+            style: GoogleFonts.oswald(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline,
+              fontSize: 30.0,
+              height: 1.3,
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
           LayoutBuilder(builder: (context, constraints) {
             if (constraints.maxWidth >= ScreenSize.lg) {
               return SizedBox(

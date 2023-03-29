@@ -28,11 +28,17 @@ class ContactsWidget extends StatelessWidget {
               height: 1.3,
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
           Text(
               "In a world of algorithms, hashtags and followers, we often forget the true importance of Human Connection",
               textAlign: TextAlign.center,
               style: GoogleFonts.getFont('Delius',
-                  color: ColorsList.primary, fontSize: 14)),
+                  color: Colors.white70, fontSize: 14)),
+          SizedBox(
+            height: 20,
+          ),
           LayoutBuilder(builder: (context, constraints) {
             if (constraints.maxWidth >= ScreenSize.lg) {
               return Column(
@@ -45,7 +51,7 @@ class ContactsWidget extends StatelessWidget {
                     children: const [
                       NavBarItemWithIcon(
                         text: 'Mail',
-                        icon: ImageAssetConstants.linkedIn,
+                        icon: ImageAssetConstants.mail,
                         url: 'mailto:roychowdhurydebdoot@gmail.com',
                       ),
                       SizedBox(width: 10),
@@ -74,7 +80,7 @@ class ContactsWidget extends StatelessWidget {
                       SizedBox(width: 10),
                       NavBarItemWithIcon(
                           text: 'Quora',
-                          icon: ImageAssetConstants.facebook,
+                          icon: ImageAssetConstants.quora,
                           url:
                               'https://www.quora.com/profile/Debdoot-Roy-Chowdhury-1'),
                       SizedBox(width: 10),
@@ -122,7 +128,7 @@ class ContactsWidget extends StatelessWidget {
                       SizedBox(width: 10),
                       NavBarItemWithIcon(
                           text: 'Quora',
-                          icon: ImageAssetConstants.facebook,
+                          icon: ImageAssetConstants.quora,
                           url:
                               'https://www.quora.com/profile/Debdoot-Roy-Chowdhury-1'),
                       SizedBox(width: 10),

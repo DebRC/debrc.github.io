@@ -30,7 +30,7 @@ class ProjectsList {
         period: "2021",
         description:
             'A File Compressor site which uses Huffmann Coding technique to perform lossless compression/decompression of text (.txt) files.',
-        icon: ImageAssetConstants.java,
+        icon: ImageAssetConstants.javascript,
         url: "https://github.com/DebRC/Huffmann-File-Compressor"),
   ];
 }

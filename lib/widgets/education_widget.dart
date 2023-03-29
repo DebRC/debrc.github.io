@@ -36,22 +36,13 @@ class EducationWidget extends StatelessWidget {
           const SizedBox(
             height: 5.0,
           ),
-          SizedBox(
-            height: 50,
-            child: AnimatedTextKit(
-              repeatForever: true,
-              pause: const Duration(seconds: 5),
-              animatedTexts: [
-                TyperAnimatedText(
-                    "Currently pursuing an Undergradaute Degree but interested to pursue a Master's Degree in Computer Science soon.",
-                    textAlign: TextAlign.start,
-                    textStyle: GoogleFonts.delius(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,
-                        height: 1.3)),
-              ],
-            ),
-          ),
+          Text(
+              "Currently pursuing an Undergradaute Degree but interested to pursue a Master's Degree in Computer Science soon.",
+              textAlign: TextAlign.start,
+              style: GoogleFonts.delius(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w400,
+                  height: 1.3)),
           const SizedBox(
             height: 20.0,
           ),

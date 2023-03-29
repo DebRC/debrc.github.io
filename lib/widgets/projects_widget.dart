@@ -35,22 +35,12 @@ class ProjectsWidget extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          SizedBox(
-            height: 20,
-            child: AnimatedTextKit(
-              repeatForever: true,
-              pause: const Duration(seconds: 5),
-              animatedTexts: [
-                TyperAnimatedText(
-                    "Tap on the project to visit the GitHub Repository.",
-                    textAlign: TextAlign.start,
-                    textStyle: GoogleFonts.delius(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400,
-                        height: 1.3)),
-              ],
-            ),
-          ),
+          Text("Tap on the project to visit the GitHub Repository.",
+              textAlign: TextAlign.start,
+              style: GoogleFonts.delius(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w400,
+                  height: 1.3)),
           SizedBox(
             height: 20,
           ),

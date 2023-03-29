@@ -31,16 +31,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/logo.png
     - assets/github.png
     - assets/facebook.png
     - assets/linkedIn.png
+    - assets/mail.png
+    - assets/quora.png
     - assets/flutter.png
-    - assets/java.png
+    - assets/javascript.png
     - assets/python.png
-    - assets/khalid.png
     - assets/profile1.png
-    - assets/flutter_circle.png
-    - assets/java_circle.png
-    - assets/python_circle.png
-    - assets/backend_icon.png
