@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 
 class Skills extends StatelessWidget {
   final Color color;
@@ -22,7 +22,7 @@ class Skills extends StatelessWidget {
           color: color,
           border: Border.all(
               color: (textColor == Colors.black)
-                  ? CustomColors.primary
+                  ? ColorsList.primary
                   : textColor)),
       child: Center(
           child: Text('.' + skillName,

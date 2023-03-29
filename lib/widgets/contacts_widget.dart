@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/image_assets.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/nav_bar_item_with_icon.dart';
@@ -14,7 +14,7 @@ class ContactsWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
         width: width,
-        color: CustomColors.darkBackground,
+        color: ColorsList.darkBackground,
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.1, vertical: width * 0.05),
         key: contactsKey,
@@ -32,7 +32,7 @@ class ContactsWidget extends StatelessWidget {
               "In a world of algorithms, hashtags and followers, we often forget the true importance of Human Connection",
               textAlign: TextAlign.center,
               style: GoogleFonts.getFont('Delius',
-                  color: CustomColors.primary, fontSize: 14)),
+                  color: ColorsList.primary, fontSize: 14)),
           LayoutBuilder(builder: (context, constraints) {
             if (constraints.maxWidth >= ScreenSize.lg) {
               return Column(

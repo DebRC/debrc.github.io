@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/education_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 
@@ -14,7 +14,7 @@ class EducationWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
-      color: CustomColors.brightBackground,
+      color: ColorsList.brightBackground,
       padding:
           EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.05),
       key: educationKey,

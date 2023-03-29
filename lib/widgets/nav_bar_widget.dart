@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/image_assets.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/logo.dart';
@@ -138,7 +138,7 @@ class NavBar extends StatelessWidget {
                   height: data.value,
                   width: double.infinity,
                   decoration: const BoxDecoration(
-                    color: CustomColors.darkBackground,
+                    color: ColorsList.darkBackground,
                   ),
                   child: SingleChildScrollView(
                     child: Column(

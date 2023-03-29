@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/contacts_widget.dart';
 import 'package:portfolio_site/widgets/education_widget.dart';
@@ -66,13 +66,13 @@ class _HomePageState extends State<HomePage> {
                         scrollController.position.minScrollExtent,
                         duration: const Duration(milliseconds: 700),
                         curve: Curves.easeInOut),
-                    backgroundColor: CustomColors.primary,
+                    backgroundColor: ColorsList.primary,
                     child: const Icon(Icons.arrow_upward,
-                        color: CustomColors.darkBackground)),
+                        color: ColorsList.darkBackground)),
               ),
           showFloatingButton),
       body: Container(
-        color: CustomColors.darkBackground,
+        color: ColorsList.darkBackground,
         width: width,
         child: SingleChildScrollView(
           controller: scrollController,

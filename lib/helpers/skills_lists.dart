@@ -1,46 +1,46 @@
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 
 class SkillsList {
   static List<Map<dynamic, dynamic>> skillsList = [
     {
       'skillName': 'Python',
-      'color': CustomColors.primary,
-      'textColor': CustomColors.darkBackground,
+      'color': ColorsList.primary,
+      'textColor': ColorsList.darkBackground,
     },
     {
       'skillName': 'Flutter',
-      'color': CustomColors.brightBackground,
-      'textColor': CustomColors.primary,
+      'color': ColorsList.brightBackground,
+      'textColor': ColorsList.primary,
     },
     {
       'skillName': 'HTML/CSS',
-      'color': CustomColors.primary,
-      'textColor': CustomColors.darkBackground,
+      'color': ColorsList.primary,
+      'textColor': ColorsList.darkBackground,
     },
     {
       'skillName': 'Node JS',
-      'color': CustomColors.brightBackground,
-      'textColor': CustomColors.primary,
+      'color': ColorsList.brightBackground,
+      'textColor': ColorsList.primary,
     },
     {
       'skillName': 'Docker',
-      'color': CustomColors.primary,
-      'textColor': CustomColors.darkBackground,
+      'color': ColorsList.primary,
+      'textColor': ColorsList.darkBackground,
     },
     {
       'skillName': 'AWS',
-      'color': CustomColors.brightBackground,
-      'textColor': CustomColors.primary,
+      'color': ColorsList.brightBackground,
+      'textColor': ColorsList.primary,
     },
     {
       'skillName': 'Firebase',
-      'color': CustomColors.primary,
-      'textColor': CustomColors.darkBackground,
+      'color': ColorsList.primary,
+      'textColor': ColorsList.darkBackground,
     },
     {
       'skillName': 'Problem Solving',
-      'color': CustomColors.brightBackground,
-      'textColor': CustomColors.primary,
+      'color': ColorsList.brightBackground,
+      'textColor': ColorsList.primary,
     },
   ];
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -23,7 +23,7 @@ class Description extends StatelessWidget {
               width: 200,
               height: 40,
               alignment: Alignment.center,
-              color: CustomColors.primary,
+              color: ColorsList.primary,
               child: Center(
                   child: Text('Computer Science Engineer',
                       style: GoogleFonts.getFont('Days One',
@@ -51,7 +51,7 @@ class Description extends StatelessWidget {
                       textAlign:
                           isVertical ? TextAlign.center : TextAlign.start,
                       textStyle: GoogleFonts.getFont('Delius',
-                          color: CustomColors.gray, fontSize: 15)),
+                          color: ColorsList.gray, fontSize: 15)),
                 ],
               ),
             ),
@@ -64,7 +64,7 @@ class Description extends StatelessWidget {
                         foregroundColor:
                             MaterialStateProperty.all<Color>(Colors.blue),
                         backgroundColor: MaterialStateProperty.all<Color>(
-                            CustomColors.primary),
+                            ColorsList.primary),
                       ),
                       onPressed: () {
                         launchUrlString(
@@ -83,7 +83,7 @@ class Description extends StatelessWidget {
                       child: Text("Connect with me!",
                           style: GoogleFonts.getFont('Delius',
                               decoration: TextDecoration.underline,
-                              color: CustomColors.primary,
+                              color: ColorsList.primary,
                               fontSize: 20)),
                     ),
                   ],
@@ -95,7 +95,7 @@ class Description extends StatelessWidget {
                         foregroundColor:
                             MaterialStateProperty.all<Color>(Colors.blue),
                         backgroundColor: MaterialStateProperty.all<Color>(
-                            CustomColors.primary),
+                            ColorsList.primary),
                       ),
                       onPressed: () {
                         launchUrlString(
@@ -114,7 +114,7 @@ class Description extends StatelessWidget {
                       child: Text("Connect with me!",
                           style: GoogleFonts.getFont('Delius',
                               decoration: TextDecoration.underline,
-                              color: CustomColors.primary,
+                              color: ColorsList.primary,
                               fontSize: 20)),
                     ),
                   ],

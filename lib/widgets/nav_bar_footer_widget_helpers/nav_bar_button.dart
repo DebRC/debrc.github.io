@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 
 class NavBarButton extends StatelessWidget {
@@ -15,8 +15,8 @@ class NavBarButton extends StatelessWidget {
       onPressed: () => onPressed(),
       child: const Icon(Icons.menu, color: Colors.white),
       style: ElevatedButton.styleFrom(
-        foregroundColor: CustomColors.brightBackground,
-        backgroundColor: CustomColors.darkBackground, elevation: 4.0,
+        foregroundColor: ColorsList.brightBackground,
+        backgroundColor: ColorsList.darkBackground, elevation: 4.0,
         shape: const CircleBorder(),
         padding: EdgeInsets.all(width >= ScreenSize.md
             ? 0.03 * width

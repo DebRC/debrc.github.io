@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/image_assets.dart';
 
 class ProfileImage extends StatelessWidget {
@@ -38,7 +38,7 @@ class ProfileImage extends StatelessWidget {
             width: width * 0.007,
             height: width * 0.007,
             decoration: const BoxDecoration(
-                color: CustomColors.primary,
+                color: ColorsList.primary,
                 borderRadius: BorderRadius.all(Radius.circular(50))),
           ),
         ),
@@ -49,7 +49,7 @@ class ProfileImage extends StatelessWidget {
             width: width * 0.007,
             height: width * 0.007,
             decoration: const BoxDecoration(
-                color: CustomColors.purple,
+                color: ColorsList.purple,
                 borderRadius: BorderRadius.all(Radius.circular(50))),
           ),
         ),
@@ -60,7 +60,7 @@ class ProfileImage extends StatelessWidget {
             width: width * 0.007,
             height: width * 0.007,
             decoration: const BoxDecoration(
-                color: CustomColors.secondary,
+                color: ColorsList.secondary,
                 borderRadius: BorderRadius.all(Radius.circular(50))),
           ),
         ),
@@ -71,7 +71,7 @@ class ProfileImage extends StatelessWidget {
             width: width * 0.012,
             height: width * 0.012,
             decoration: const BoxDecoration(
-                color: CustomColors.darkBackground,
+                color: ColorsList.darkBackground,
                 borderRadius: BorderRadius.all(Radius.circular(50))),
           ),
         )

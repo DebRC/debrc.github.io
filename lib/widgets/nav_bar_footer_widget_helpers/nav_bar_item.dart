@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 
 class NavBarItem extends StatelessWidget {
   final String text;
@@ -39,7 +39,7 @@ class NavBarItem extends StatelessWidget {
                   text,
                   style: TextStyle(
                     fontSize: 12.0,
-                    color: data.value ? CustomColors.primary : Colors.white,
+                    color: data.value ? ColorsList.primary : Colors.white,
                   ),
                 ),
                 const SizedBox(
@@ -49,7 +49,7 @@ class NavBarItem extends StatelessWidget {
                     ? Container(
                         width: 40,
                         height: 1,
-                        color: CustomColors.primary,
+                        color: ColorsList.primary,
                       )
                     : const SizedBox.shrink()
               ],

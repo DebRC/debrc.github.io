@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/models/project.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -17,7 +17,7 @@ class ProjectCard extends StatelessWidget {
     return GestureDetector(
       onTap: () => launchUrlString(project.url),
       child: Card(
-        color: CustomColors.brightBackground,
+        color: ColorsList.brightBackground,
         child: SizedBox(
           width: width * ratio,
           child: Stack(
@@ -30,7 +30,7 @@ class ProjectCard extends StatelessWidget {
                   children: [
                     Text(project.title,
                         style: GoogleFonts.getFont('Delius',
-                            color: CustomColors.primary, fontSize: 16)),
+                            color: ColorsList.primary, fontSize: 16)),
                     const SizedBox(height: 8),
                     Text(project.period,
                         style: GoogleFonts.getFont('Delius',
@@ -38,7 +38,7 @@ class ProjectCard extends StatelessWidget {
                     const SizedBox(height: 10),
                     Text(project.description,
                         style: GoogleFonts.getFont('Delius',
-                            color: CustomColors.gray, fontSize: 12)),
+                            color: ColorsList.gray, fontSize: 12)),
                   ],
                 ),
               ),

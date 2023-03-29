@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/projects_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/projects_widget_helpers/project_card.dart';
@@ -14,7 +14,7 @@ class ProjectsWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
-      color: CustomColors.darkBackground,
+      color: ColorsList.darkBackground,
       padding:
           EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.05),
       key: projectsKey,

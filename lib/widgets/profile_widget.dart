@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/helpers/colors.dart';
+import 'package:portfolio_site/helpers/colors_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/profile_widget_helpers/description.dart';
 import 'package:portfolio_site/widgets/profile_widget_helpers/profile_image.dart';
@@ -12,7 +12,7 @@ class ProfileWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
-      color: CustomColors.darkBackground,
+      color: ColorsList.darkBackground,
       padding: const EdgeInsets.only(bottom: 20),
       child: LayoutBuilder(builder: (context, constraints) {
         if (constraints.maxWidth >= ScreenSize.lg) {
