@@ -8,19 +8,14 @@ class EducationList {
         discipline: "Computer Science and Engineering",
         period: "2019-2023"),
     Education(
-        name: "Govt. College of Engineering and Ceramic Technology",
-        degree: "Bachelor of Technology",
-        discipline: "Computer Science and Engineering",
-        period: "2019-2023"),
+        name: "A.K. Ghosh Memorial High School",
+        degree: "Higher Secondary",
+        discipline: "Science",
+        period: "2016-2018"),
     Education(
-        name: "Govt. College of Engineering and Ceramic Technology",
-        degree: "Bachelor of Technology",
-        discipline: "Computer Science and Engineering",
-        period: "2019-2023"),
-    Education(
-        name: "Govt. College of Engineering and Ceramic Technology",
-        degree: "Bachelor of Technology",
-        discipline: "Computer Science and Engineering",
-        period: "2019-2023"),
+        name: "A.K. Ghosh Memorial School",
+        degree: "Secondary",
+        discipline: "Elementary School",
+        period: "2015-2016"),
   ];
 }

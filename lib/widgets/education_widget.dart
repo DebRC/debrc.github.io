@@ -16,10 +16,11 @@ class EducationWidget extends StatelessWidget {
       width: width,
       color: CustomColors.brightBackground,
       padding:
-          EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.1),
+          EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.05),
       key: educationKey,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Text(
             "EDUCATION",
@@ -33,19 +34,12 @@ class EducationWidget extends StatelessWidget {
           const SizedBox(
             height: 5.0,
           ),
-          Wrap(
-            children: [
-              Container(
-                constraints: BoxConstraints(maxWidth: 400.0),
-                child: Text(
-                  "Currently pursuing my undergradaute degree but interested to pursue a Master's Degree in near future",
-                  style: TextStyle(
-                    color: Colors.white,
-                    height: 1.5,
-                  ),
-                ),
-              ),
-            ],
+          Text(
+            "Currently pursuing my undergradaute degree but interested to pursue a Master's Degree in near future",
+            style: TextStyle(
+              color: Colors.white,
+              height: 1.5,
+            ),
           ),
           const SizedBox(
             height: 20.0,
@@ -62,6 +56,7 @@ class EducationWidget extends StatelessWidget {
                           width: constraints.maxWidth / 2.0 - 20.0,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Text(
                                 education.name,
@@ -115,6 +110,8 @@ class EducationWidget extends StatelessWidget {
                 );
               } else {
                 return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: EducationList.educationList
                       .map(
                         (education) => Column(
