@@ -4,9 +4,10 @@ import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/logo.dart';
 
-class Footer extends StatelessWidget {
+class FooterWidget extends StatelessWidget {
   final ScrollController scrollController;
-  const Footer({required this.scrollController, Key? key}) : super(key: key);
+  const FooterWidget({required this.scrollController, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
