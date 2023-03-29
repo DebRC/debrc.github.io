@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
-import 'package:portfolio_site/widgets/logo.dart';
+import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/logo.dart';
 
 class FooterWidget extends StatelessWidget {
   final ScrollController scrollController;
