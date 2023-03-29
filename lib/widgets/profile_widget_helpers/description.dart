@@ -31,7 +31,7 @@ class Description extends StatelessWidget {
                           fontSize: 15,
                           fontWeight: FontWeight.bold)))),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Text('Hey! ',
               style: GoogleFonts.delius(
@@ -64,7 +64,7 @@ class Description extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 25,
+            width: 20,
           ),
           isVertical
               ? Column(
