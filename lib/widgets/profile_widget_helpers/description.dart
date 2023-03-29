@@ -20,25 +20,32 @@ class Description extends StatelessWidget {
         children: [
           Container(
               margin: const EdgeInsets.symmetric(horizontal: 10),
-              width: 200,
+              width: 250,
               height: 40,
               alignment: Alignment.center,
               color: ColorsList.primary,
               child: Center(
                   child: Text('Computer Science Engineer',
-                      style: GoogleFonts.getFont('Days One',
-                          color: Colors.black, fontSize: 10)))),
-          SizedBox(height: 0.015 * width),
+                      style: GoogleFonts.delius(
+                          color: Colors.black,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold)))),
+          SizedBox(
+            height: 30,
+          ),
           Text('Hey! ',
-              style: GoogleFonts.getFont('Delius',
-                  color: Colors.white, fontSize: 30)),
+              style: GoogleFonts.delius(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700)),
           const SizedBox(height: 5),
           Text("I'm Debdoot",
-              style: GoogleFonts.getFont('Delius',
-                  color: Colors.white, fontSize: 30)),
-          const SizedBox(height: 20),
+              style: GoogleFonts.delius(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700)),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             child: SizedBox(
               width: isVertical ? double.infinity : width * 0.29,
               height: 100,
@@ -47,7 +54,7 @@ class Description extends StatelessWidget {
                 pause: const Duration(seconds: 5),
                 animatedTexts: [
                   TyperAnimatedText(
-                      "I'm good with Theoretical Computer Science &\nA little bit of development using Flutter and Node JS.\n\nI have secured AIR 52 in GATE CS 2023.",
+                      "I'm good with Theoretical Computer Science &\nA little bit of development using Flutter and NodeJS.\n\nI have secured AIR 52 in GATE CS 2023.",
                       textAlign:
                           isVertical ? TextAlign.center : TextAlign.start,
                       textStyle: GoogleFonts.getFont('Delius',
@@ -71,8 +78,10 @@ class Description extends StatelessWidget {
                             "https://drive.google.com/file/d/1ipBxRJNCUmF9lmzXMcZlZl0nYOnzXcqy/view");
                       },
                       child: Text('My Resume',
-                          style: GoogleFonts.getFont('Days One',
-                              color: Colors.black, fontSize: 10)),
+                          style: GoogleFonts.delius(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700)),
                     ),
                     SizedBox(
                       height: 20,
@@ -102,8 +111,10 @@ class Description extends StatelessWidget {
                             "https://drive.google.com/file/d/1ipBxRJNCUmF9lmzXMcZlZl0nYOnzXcqy/view");
                       },
                       child: Text('My Resume',
-                          style: GoogleFonts.getFont('Days One',
-                              color: Colors.black, fontSize: 10)),
+                          style: GoogleFonts.delius(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700)),
                     ),
                     SizedBox(
                       width: 20,
