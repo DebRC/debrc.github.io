@@ -26,11 +26,11 @@ class NavBarItem extends StatelessWidget {
           onTap: () => onTap(),
           child: Container(
             height: 40.0,
-            width: 60,
+            width: 90,
             alignment: Alignment.center,
             margin: const EdgeInsets.symmetric(horizontal: 18.0),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 const SizedBox(
                   height: 6,

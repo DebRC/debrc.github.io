@@ -25,7 +25,7 @@ class Skills extends StatelessWidget {
                   ? ColorsList.primary
                   : textColor)),
       child: Center(
-          child: Text('.' + skillName,
+          child: Text(skillName,
               style: GoogleFonts.getFont('Delius',
                   color: textColor, fontSize: 13))),
     );

@@ -109,6 +109,7 @@ class _HomePageState extends State<HomePage> {
                 width: width,
                 educationKey: educationKey,
                 projectsKey: projectsKey,
+                achievementsKey: achievementsKey,
                 skillsKey: skillsKey,
                 contactsKey: contactsKey,
                 scrollController: scrollController,
