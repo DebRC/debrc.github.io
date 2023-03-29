@@ -99,7 +99,7 @@ class ContactsWidget extends StatelessWidget {
                     children: const [
                       NavBarItemWithIcon(
                         text: 'Mail',
-                        icon: ImageAssetConstants.linkedIn,
+                        icon: ImageAssetConstants.mail,
                         url: 'mailto:roychowdhurydebdoot@gmail.com',
                       ),
                       SizedBox(width: 10),
