@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/image_assets.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
-import 'package:portfolio_site/widgets/logo.dart';
-import 'package:portfolio_site/widgets/nav_bar_button.dart';
-import 'package:portfolio_site/widgets/nav_bar_item.dart';
-import 'package:portfolio_site/widgets/nav_bar_item_with_icon.dart';
+import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/logo.dart';
+import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/nav_bar_button.dart';
+import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/nav_bar_item.dart';
+import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/nav_bar_item_with_icon.dart';
 
 class NavBar extends StatelessWidget {
   final double width;
