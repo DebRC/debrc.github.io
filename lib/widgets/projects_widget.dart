@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_site/helpers/colors.dart';
-import 'package:portfolio_site/helpers/image_assets.dart';
+import 'package:portfolio_site/helpers/projects_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/widgets/projects_widget_helpers/project_card.dart';
 
@@ -16,7 +16,7 @@ class ProjectsWidget extends StatelessWidget {
       width: width,
       color: CustomColors.darkBackground,
       padding:
-          EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.1),
+          EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.05),
       key: projectsKey,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -36,96 +36,75 @@ class ProjectsWidget extends StatelessWidget {
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ProjectCard(
-                        title: 'Flutter Development',
-                        description:
-                            'I’m developing android,ios and web applications using flutter platform.',
-                        icon: ImageAssetConstants.flutter,
-                        width: width,
-                        ratio: 0.35,
-                      ),
-                      const SizedBox(height: 10),
-                      ProjectCard(
-                        title: 'Backend Development',
-                        description:
-                            'I’m developing backend applications using codnuit and spring boot with a good knowledge in nodejs.',
-                        icon: ImageAssetConstants.backendIcon,
-                        width: width,
-                        ratio: 0.35,
-                      ),
-                      const SizedBox(height: 10),
-                      ProjectCard(
-                          title: 'Python Development',
-                          description:
-                              'I’m developing maching learing and deep learning projects using standard python libraries and tensorflow api.',
-                          icon: ImageAssetConstants.python,
-                          width: width,
-                          ratio: 0.35),
-                    ],
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: ProjectsList.projectsList
+                        .sublist(
+                            0, (ProjectsList.projectsList.length / 2) as int)
+                        .map(
+                          (project) => Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ProjectCard(
+                                project: project,
+                                ratio: 0.35,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              )
+                            ],
+                          ),
+                        )
+                        .toList(),
+                  ),
+                  SizedBox(
+                    width: 20,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      ProjectCard(
-                        title: 'Flutter Development',
-                        description:
-                            'I’m developing android,ios and web applications using flutter platform.',
-                        icon: ImageAssetConstants.flutter,
-                        width: width,
-                        ratio: 0.35,
-                      ),
-                      const SizedBox(height: 10),
-                      ProjectCard(
-                        title: 'Backend Development',
-                        description:
-                            'I’m developing backend applications using codnuit and spring boot with a good knowledge in nodejs.',
-                        icon: ImageAssetConstants.backendIcon,
-                        width: width,
-                        ratio: 0.35,
-                      ),
-                      const SizedBox(height: 10),
-                      ProjectCard(
-                          title: 'Python Development',
-                          description:
-                              'I’m developing maching learing and deep learning projects using standard python libraries and tensorflow api.',
-                          icon: ImageAssetConstants.python,
-                          width: width,
-                          ratio: 0.35),
-                    ],
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: ProjectsList.projectsList
+                        .sublist((ProjectsList.projectsList.length / 2) as int)
+                        .map(
+                          (project) => Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              ProjectCard(
+                                project: project,
+                                ratio: 0.35,
+                              ),
+                              SizedBox(
+                                height: 5,
+                              )
+                            ],
+                          ),
+                        )
+                        .toList(),
                   ),
                 ],
               );
             } else {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ProjectCard(
-                    title: 'Flutter Development',
-                    description:
-                        'I’m developing android,ios and web applications using flutter platform.',
-                    icon: ImageAssetConstants.flutter,
-                    width: width,
-                    ratio: 0.7,
-                  ),
-                  const SizedBox(height: 10),
-                  ProjectCard(
-                    title: 'Backend Development',
-                    description:
-                        'I’m developing backend applications using codnuit and spring boot with a good knowledge in nodejs.',
-                    icon: ImageAssetConstants.backendIcon,
-                    width: width,
-                    ratio: 0.7,
-                  ),
-                  const SizedBox(height: 10),
-                  ProjectCard(
-                      title: 'Python Development',
-                      description:
-                          'I’m developing maching learing and deep learning projects using standard python libraries and tensorflow api.',
-                      icon: ImageAssetConstants.python,
-                      width: width,
-                      ratio: 0.7),
-                ],
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: ProjectsList.projectsList
+                    .map(
+                      (project) => Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ProjectCard(
+                            project: project,
+                            ratio: 0.7,
+                          ),
+                          SizedBox(
+                            height: 5,
+                          )
+                        ],
+                      ),
+                    )
+                    .toList(),
               );
             }
           }),
