@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/image_assets.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/image_assets.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 import 'package:portfolio_site/widgets/nav_bar_footer_widget_helpers/nav_bar_item_with_icon.dart';
 
 class ContactsWidget extends StatelessWidget {

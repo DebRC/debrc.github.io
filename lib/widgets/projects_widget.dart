@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/projects_list.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/projects_list.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 import 'package:portfolio_site/widgets/projects_widget_helpers/project_card.dart';
 
 class ProjectsWidget extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 import 'package:portfolio_site/widgets/contacts_widget.dart';
 import 'package:portfolio_site/widgets/education_widget.dart';
 import 'package:portfolio_site/widgets/footer_widget.dart';

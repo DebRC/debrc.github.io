@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
-import 'package:portfolio_site/helpers/skills_lists.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/screensize.dart';
+import 'package:portfolio_site/constants/skills_lists.dart';
 import 'package:portfolio_site/widgets/skills_widget_helper/skills.dart';
 
 class SkillsWidget extends StatelessWidget {

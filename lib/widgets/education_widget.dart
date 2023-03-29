@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/education_list.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/education_list.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 
 class EducationWidget extends StatelessWidget {
   final GlobalKey educationKey;

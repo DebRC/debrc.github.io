@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/image_assets.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/image_assets.dart';
 
 class ProfileImage extends StatelessWidget {
   final double width;

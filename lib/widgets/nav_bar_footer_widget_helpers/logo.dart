@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 
 class Logo extends StatelessWidget {
   final double width;

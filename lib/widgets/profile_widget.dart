@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 import 'package:portfolio_site/widgets/profile_widget_helpers/description.dart';
 import 'package:portfolio_site/widgets/profile_widget_helpers/profile_image.dart';
 

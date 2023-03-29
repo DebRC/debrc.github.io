@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
 
 class NavBarItem extends StatelessWidget {
   final String text;

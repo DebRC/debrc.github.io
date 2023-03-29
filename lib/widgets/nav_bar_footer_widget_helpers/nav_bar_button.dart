@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_site/helpers/colors_list.dart';
-import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/constants/colors_list.dart';
+import 'package:portfolio_site/constants/screensize.dart';
 
 class NavBarButton extends StatelessWidget {
   final Function onPressed;
