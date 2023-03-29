@@ -15,80 +15,123 @@ class ContactsWidget extends StatelessWidget {
     return Container(
         width: width,
         color: CustomColors.darkBackground,
-        alignment: Alignment.center,
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.1, vertical: width * 0.05),
         key: contactsKey,
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "GET IN TOUCH",
-                style: GoogleFonts.oswald(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 30.0,
-                  height: 1.3,
-                ),
-              ),
-              Text(
-                  "In a world of algorithms, hashtags and followers, we often forget the true importance of Human Connection",
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.getFont('Delius',
-                      color: CustomColors.primary, fontSize: 14)),
-              LayoutBuilder(builder: (context, constraints) {
-                if (constraints.maxWidth >= ScreenSize.lg) {
-                  return Column(
+        child: Column(children: [
+          Text(
+            "GET IN TOUCH",
+            style: GoogleFonts.oswald(
+              color: Colors.white,
+              fontWeight: FontWeight.w900,
+              fontSize: 30.0,
+              height: 1.3,
+            ),
+          ),
+          Text(
+              "In a world of algorithms, hashtags and followers, we often forget the true importance of Human Connection",
+              textAlign: TextAlign.center,
+              style: GoogleFonts.getFont('Delius',
+                  color: CustomColors.primary, fontSize: 14)),
+          LayoutBuilder(builder: (context, constraints) {
+            if (constraints.maxWidth >= ScreenSize.lg) {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          NavBarItemWithIcon(
-                            text: 'Mail',
-                            icon: ImageAssetConstants.linkedIn,
-                            url: '',
-                          ),
-                          SizedBox(width: 10),
-                          NavBarItemWithIcon(
-                              text: 'LinkedIn',
-                              icon: ImageAssetConstants.linkedIn,
-                              url: ''),
-                        ],
+                    children: const [
+                      NavBarItemWithIcon(
+                        text: 'Mail',
+                        icon: ImageAssetConstants.linkedIn,
+                        url: 'mailto:roychowdhurydebdoot@gmail.com',
                       ),
-                      SizedBox(height: 10),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          NavBarItemWithIcon(
-                            text: 'GitHub',
-                            icon: ImageAssetConstants.github,
-                            url: '',
-                          ),
-                          SizedBox(width: 10),
-                          NavBarItemWithIcon(
-                            text: 'Facebook',
-                            icon: ImageAssetConstants.facebook,
-                            url: '',
-                          ),
-                          SizedBox(width: 10),
-                          NavBarItemWithIcon(
-                              text: 'Quora',
-                              icon: ImageAssetConstants.facebook,
-                              url: ''),
-                          SizedBox(width: 10),
-                        ],
-                      ),
+                      SizedBox(width: 10),
+                      NavBarItemWithIcon(
+                          text: 'LinkedIn',
+                          icon: ImageAssetConstants.linkedIn,
+                          url: 'https://www.linkedin.com/in/debdootrc/'),
                     ],
-                  );
-                } else {
-                  return Column();
-                }
-              }),
-            ]));
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      NavBarItemWithIcon(
+                        text: 'GitHub',
+                        icon: ImageAssetConstants.github,
+                        url: 'https://github.com/DebRC',
+                      ),
+                      SizedBox(width: 10),
+                      NavBarItemWithIcon(
+                        text: 'Facebook',
+                        icon: ImageAssetConstants.facebook,
+                        url: 'https://www.facebook.com/debdootroychowdhury',
+                      ),
+                      SizedBox(width: 10),
+                      NavBarItemWithIcon(
+                          text: 'Quora',
+                          icon: ImageAssetConstants.facebook,
+                          url:
+                              'https://www.quora.com/profile/Debdoot-Roy-Chowdhury-1'),
+                      SizedBox(width: 10),
+                    ],
+                  ),
+                ],
+              );
+            } else {
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      NavBarItemWithIcon(
+                        text: 'Mail',
+                        icon: ImageAssetConstants.linkedIn,
+                        url: 'mailto:roychowdhurydebdoot@gmail.com',
+                      ),
+                      SizedBox(width: 10),
+                      NavBarItemWithIcon(
+                          text: 'LinkedIn',
+                          icon: ImageAssetConstants.linkedIn,
+                          url: 'https://www.linkedin.com/in/debdootrc/'),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: const [
+                      NavBarItemWithIcon(
+                        text: 'GitHub',
+                        icon: ImageAssetConstants.github,
+                        url: 'https://github.com/DebRC',
+                      ),
+                      SizedBox(width: 10),
+                      NavBarItemWithIcon(
+                        text: 'Facebook',
+                        icon: ImageAssetConstants.facebook,
+                        url: 'https://www.facebook.com/debdootroychowdhury',
+                      ),
+                      SizedBox(width: 10),
+                      NavBarItemWithIcon(
+                          text: 'Quora',
+                          icon: ImageAssetConstants.facebook,
+                          url:
+                              'https://www.quora.com/profile/Debdoot-Roy-Chowdhury-1'),
+                      SizedBox(width: 10),
+                    ],
+                  ),
+                ],
+              );
+            }
+          }),
+        ]));
   }
 }
