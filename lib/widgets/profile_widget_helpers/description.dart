@@ -13,7 +13,7 @@ class Description extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: isVertical ? double.infinity : width * 0.29,
+      width: isVertical ? double.infinity : width * 0.30,
       child: Column(
         crossAxisAlignment:
             isVertical ? CrossAxisAlignment.center : CrossAxisAlignment.start,
@@ -62,6 +62,9 @@ class Description extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          SizedBox(
+            width: 25,
           ),
           isVertical
               ? Column(

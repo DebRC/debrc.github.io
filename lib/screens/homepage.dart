@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   const SizedBox(height: 100),
                   ProfileWidget(),
-                  const SizedBox(height: 100),
+                  const SizedBox(height: 70),
                   EducationWidget(
                     educationKey: educationKey,
                   ),

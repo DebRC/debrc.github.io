@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_site/constants/colors_list.dart';
@@ -25,7 +26,8 @@ class ProjectsWidget extends StatelessWidget {
             "PROJECTS",
             style: GoogleFonts.oswald(
               color: Colors.white,
-              fontWeight: FontWeight.w900,
+              fontWeight: FontWeight.bold,
+              decoration: TextDecoration.underline,
               fontSize: 30.0,
               height: 1.3,
             ),
@@ -33,11 +35,22 @@ class ProjectsWidget extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          Text("Tap on the project to visit the GitHub Repo",
-              style: TextStyle(
-                color: Colors.white,
-                height: 1.5,
-              )),
+          SizedBox(
+            height: 20,
+            child: AnimatedTextKit(
+              repeatForever: true,
+              pause: const Duration(seconds: 5),
+              animatedTexts: [
+                TyperAnimatedText(
+                    "Tap on the project to visit the GitHub Repository.",
+                    textAlign: TextAlign.start,
+                    textStyle: GoogleFonts.delius(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400,
+                        height: 1.3)),
+              ],
+            ),
+          ),
           SizedBox(
             height: 20,
           ),

@@ -17,12 +17,12 @@ class Logo extends StatelessWidget {
           curve: Curves.easeInOut),
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
-        child: Text("DebRC",
+        child: Text("</> DebRC",
             style: GoogleFonts.getFont('Delius',
                 color: Colors.white,
                 fontSize: width >= ScreenSize.xlg
-                    ? width * 0.02
-                    : ScreenSize.xlg * 0.02)),
+                    ? width * 0.015
+                    : ScreenSize.xlg * 0.025)),
       ),
     );
   }

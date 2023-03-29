@@ -49,7 +49,7 @@ class ProfileWidget extends StatelessWidget {
             children: [
               SizedBox(width: width * 0.07),
               Center(child: ProfileImage(width: 2 * width)),
-              SizedBox(height: 0.05 * width),
+              SizedBox(height: 0.1 * width),
               Description(isVertical: true, width: width),
             ],
           );
