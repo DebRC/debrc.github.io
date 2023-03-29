@@ -3,44 +3,44 @@ import 'package:portfolio_site/helpers/colors.dart';
 class SkillsList {
   static List<Map<dynamic, dynamic>> skillsList = [
     {
-      'skillName': 'Beatbox',
+      'skillName': 'Python',
       'color': CustomColors.primary,
       'textColor': CustomColors.darkBackground,
     },
     {
-      'skillName': 'Chess',
+      'skillName': 'Flutter',
       'color': CustomColors.brightBackground,
       'textColor': CustomColors.primary,
     },
     {
-      'skillName': 'Soccer',
+      'skillName': 'HTML/CSS',
       'color': CustomColors.primary,
       'textColor': CustomColors.darkBackground,
     },
     {
-      'skillName': 'Listening to music',
+      'skillName': 'Node JS',
       'color': CustomColors.brightBackground,
       'textColor': CustomColors.primary,
     },
     {
-      'skillName': 'Watching movies',
-      'color': CustomColors.brightBackground,
-      'textColor': CustomColors.primary,
-    },
-    {
-      'skillName': 'Math',
+      'skillName': 'Docker',
       'color': CustomColors.primary,
       'textColor': CustomColors.darkBackground,
     },
     {
-      'skillName': 'Learning English',
+      'skillName': 'AWS',
       'color': CustomColors.brightBackground,
       'textColor': CustomColors.primary,
     },
     {
-      'skillName': 'Solving Problems',
+      'skillName': 'Firebase',
       'color': CustomColors.primary,
       'textColor': CustomColors.darkBackground,
+    },
+    {
+      'skillName': 'Problem Solving',
+      'color': CustomColors.brightBackground,
+      'textColor': CustomColors.primary,
     },
   ];
 }
