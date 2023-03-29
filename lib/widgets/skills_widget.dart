@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 import 'package:portfolio_site/helpers/skills_lists.dart';
 import 'package:portfolio_site/widgets/skills_widget_helper/skills.dart';
@@ -12,8 +13,11 @@ class SkillsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return SizedBox(
-      width: width * 0.8,
+    return Container(
+      width: width,
+      color: CustomColors.brightBackground,
+      padding:
+          EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.05),
       key: skillsKey,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

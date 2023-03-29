@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/education_list.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
 
@@ -12,7 +13,10 @@ class EducationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Container(
-      width: width * 0.7,
+      width: width,
+      color: CustomColors.brightBackground,
+      padding:
+          EdgeInsets.symmetric(horizontal: width * 0.1, vertical: width * 0.1),
       key: educationKey,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -26,7 +30,7 @@ class EducationWidget extends StatelessWidget {
               height: 1.3,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 5.0,
           ),
           Wrap(
@@ -43,7 +47,7 @@ class EducationWidget extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20.0,
           ),
           LayoutBuilder(
@@ -67,7 +71,7 @@ class EducationWidget extends StatelessWidget {
                                   fontSize: 20.0,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5.0,
                               ),
                               Text(

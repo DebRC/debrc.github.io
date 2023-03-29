@@ -12,7 +12,7 @@ class ProfileWidget extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
     return Container(
       width: width,
-      color: CustomColors.brightBackground,
+      color: CustomColors.darkBackground,
       padding: const EdgeInsets.only(bottom: 20),
       child: LayoutBuilder(builder: (context, constraints) {
         if (constraints.maxWidth >= ScreenSize.lg) {

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_site/helpers/colors.dart';
-import 'package:portfolio_site/helpers/interests_constants.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/widgets/education_widget.dart';
 import 'package:portfolio_site/widgets/footer.dart';
-import 'package:portfolio_site/widgets/lower_container.dart';
 import 'package:portfolio_site/widgets/nav_bar.dart';
 import 'package:portfolio_site/widgets/profile_widget.dart';
+import 'package:portfolio_site/widgets/projects_widget.dart';
+import 'package:portfolio_site/widgets/skills_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -70,7 +71,7 @@ class _HomePageState extends State<HomePage> {
               ),
           showFloatingButton),
       body: Container(
-        color: CustomColors.brightBackground,
+        color: CustomColors.darkBackground,
         width: width,
         child: SingleChildScrollView(
           controller: scrollController,
@@ -81,18 +82,12 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(height: 100),
                   ProfileWidget(),
                   const SizedBox(height: 100),
-                  LowerContainer(
-                    width: width,
-                    interests: Interests.interests,
+                  EducationWidget(
                     educationKey: educationKey,
-                    projectsKey: projectsKey,
-                    skillsKey: skillsKey,
-                    contactsKey: contactsKey,
                   ),
-                  Container(
-                    width: width,
-                    height: 0.1,
-                    color: CustomColors.gray,
+                  ProjectsWidget(projectsKey: projectsKey),
+                  SkillsWidget(
+                    skillsKey: skillsKey,
                   ),
                   Footer(
                     width: width,
