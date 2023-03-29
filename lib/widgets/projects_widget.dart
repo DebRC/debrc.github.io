@@ -30,6 +30,17 @@ class ProjectsWidget extends StatelessWidget {
               height: 1.3,
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
+          Text("Tap on the project to visit the GitHub Repo",
+              style: TextStyle(
+                color: Colors.white,
+                height: 1.5,
+              )),
+          SizedBox(
+            height: 20,
+          ),
           LayoutBuilder(builder: (context, constraints) {
             if (constraints.maxWidth >= ScreenSize.lg) {
               return Row(
