@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_site/helpers/colors.dart';
 import 'package:portfolio_site/helpers/screensize.dart';
+import 'package:portfolio_site/widgets/contacts_widget.dart';
 import 'package:portfolio_site/widgets/education_widget.dart';
-import 'package:portfolio_site/widgets/footer.dart';
-import 'package:portfolio_site/widgets/nav_bar.dart';
+import 'package:portfolio_site/widgets/footer_widget.dart';
+import 'package:portfolio_site/widgets/nav_bar_widget.dart';
 import 'package:portfolio_site/widgets/profile_widget.dart';
 import 'package:portfolio_site/widgets/projects_widget.dart';
 import 'package:portfolio_site/widgets/skills_widget.dart';
@@ -89,8 +90,10 @@ class _HomePageState extends State<HomePage> {
                   SkillsWidget(
                     skillsKey: skillsKey,
                   ),
-                  Footer(
-                    width: width,
+                  ContactsWidget(
+                    contactsKey: contactsKey,
+                  ),
+                  FooterWidget(
                     scrollController: scrollController,
                   ),
                 ],
